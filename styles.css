@@ -8,7 +8,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   margin: 0;
   background-color: #43a047;
   display: flex;
@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  width: 500px;
+  width: 50%;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -146,4 +146,26 @@ hr {
 .error-text.active {
   opacity: 1;
   translate: 0;
+}
+
+@media (width <= 600px) {
+  *,
+  *::before,
+  *::after {
+    font-size: 0.8rem;
+  }
+  .container {
+    width: 75%;
+  }
+}
+
+@media (width <= 350px) {
+  *,
+  *::before,
+  *::after {
+    font-size: 0.7rem;
+  }
+  .container {
+    width: 75%;
+  }
 }
